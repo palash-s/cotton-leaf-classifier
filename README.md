@@ -1,3 +1,4 @@
+[![license](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](https://github.com/palash-s/cotton-leaf-classifier/blob/main/LICENSE)
 # cotton-leaf-classifier
 
 
