@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+
+<title>Performance and Evaluation</title>
+
+{% endblock%}
+
+
+{% block body%}
+
+<center>
+
+    <h2> Measuring the Performance </h2>
+
+   
+
+
+
+</center>
+
+
+<header class="masthead clear">
+    <div class="centered">
+        
+        <div class="site-branding">
+            <h1 class="site-title">Model Performance and Evaluation</h1>
+          <p>GitHub : <a title="GitHub" href="https://github.com/palash-s">@Palash-s</a> </p>
+        </div><!-- .site-title -->
+    </div><!-- .centered -->
+</header><!-- .masthead -->
+
+<main class="main-area">
+    
+    <div class="centered">
+
+        <section class="cards">
+            
+            <article class="card">
+                
+                <picture class="thumbnail">
+                    <img src='/static/graphs/learning-curve.png' alt="Fresh Leaf">
+                </picture>
+                <div class="card-content">
+                    <h2>Optimal Learning Rate  :</h2>
+
+                    <ul>
+                        <li> <p> Optimal Learning Rate can be calculated by using tensorflow's 
+                            integrated callback API called <b><i>LearningRateScheduler()</i></b>   
+                        </p>
+                       </li>
+                        <li><p>As it appears, the model is able to learn swiftly when the learning rate 
+                            is between lr = 0.01 to 0.001.</p>
+                        </li>
+                    
+                      </ul> 
+                      
+                    </div><!-- .card-content -->
+          
+        </article><!-- .card -->
+            <article class="card">
+                
+                    <picture class="thumbnail">
+                        <img src='/static/graphs/loss-curve.png' alt="Fresh Leaf">
+                    </picture>
+                    <div class="card-content">
+                        <h2>Detailed Loss Curve:</h2>
+
+                        <ul>
+                            <li><p> At the beginning, there was some fluctuation in val_loss however, the 
+                                loss was always below 0.05 scale. Over the 50 iterations, the measured loss 
+                                was 0.038 on validation data.
+                            </p></li>
+                            <li><p> At the beginning, there was some fluctuation in val_loss however, the 
+                                loss was always below 0.05 scale. Over the 50 iterations, the measured loss 
+                                was 0.038 on validation data.
+                            </p>
+                            </li>
+                            <li><p>Later the model was evaluated on the test data and the measured loss was 
+                                0.0062 which is way better than the expectation.
+                            </p>
+                            </li>
+                          </ul> 
+
+                        </div><!-- .card-content -->
+              
+            </article><!-- .card -->
+
+            <article class="card">
+                
+                    <picture class="thumbnail">
+                        <img src='/static/graphs/accuracy-curve.png' alt="Infected Leaf">
+                    </picture>
+                    <div class="card-content">
+
+                        <h2>Detailed Accuracy Curve :</h2>
+                        <ul>
+                            <li><p>After 50 iterations, the measured accuracy was 0.983</p>
+                            </li>
+                            <li><p>On the other hand, as it can be guessed, since the loss evaluation on test data 
+                                was 0.0062, the evaluated accuracy on test data was near around 0.999.</p>
+                            </li>
+                            <li><p> Therefore, it can be concluded that the model is able to train and perform very 
+                                well in order to predict the exact cotton leaf class.
+                            </p></li>
+                          </ul> 
+
+                        
+                            
+                    </div><!-- .card-content -->
+               
+            </article><!-- .card -->
+
+            <article class="card">
+                
+                  
+                    <div class="card-content">
+                        <h2>Model Summary : </h2>
+                        
+                        <ul>
+                            <li><p><b>CNN Model :</b> The proposed model is 
+                            consist of 4 convolutional layers with a variation of 
+                        filter and kernel size from 32 to 128 and (3,3) to (2,2)
+                        respectively. </li></p>
+                            <li><p><b>Activation Function :</b> The entire model benefits 
+                            from <i>RELU</i> activation function, except for the 
+                            last output dense layers makes use of <i>sigmoid</i> activation
+                        function since it's a binary classification problem.</li> </p>
+                            <li><p><b>Loss and Accuracy : </b>To make precise predictions, 
+                            first the optimal learning rate is calculated and then based on 
+                        that the proposed model is trained. Upon evaluation on testing data, the
+                         proposed model yields the accuracy of 99.9% with a bare minimum loss of
+                         0.006% which is a state-of-the-art Performance and in fact is able to 
+                         classify cotton leaf correctly.</p>
+                     </li>
+                     <li>
+                         <p><b>What's Next ?</b> With same efforts by collecting more 
+                             relevant data, a new model will we introduced which will be 
+                            able to classify cotton leaf infection based on it's type 
+                        and category.</p>
+                     </li>
+                          </ul> 
+                    </div><!-- .card-content -->
+                
+            </article><!-- .card -->
+
+        </section><!-- .cards -->
+       
+    </div><!-- .centered -->
+    
+</main>
+
+
+
+{% endblock%}
+   
+
+  

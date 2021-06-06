@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+
+<title>Introduction</title>
+
+{% endblock%}
+
+
+{% block body%}
+
+<center>
+
+    <h2> Cotton Leaf and Infection </h2>
+
+   
+
+
+
+</center>
+
+
+<header class="masthead clear">
+    <div class="centered">
+        
+        <div class="site-branding">
+            <h1 class="site-title">Cotton Leaves and Infection</h1>
+          <p>GitHub : <a title="GitHub" href="https://github.com/palash-s">@Palash-s</a> </p>
+        </div><!-- .site-title -->
+    </div><!-- .centered -->
+</header><!-- .masthead -->
+
+<main class="main-area">
+    
+    <div class="centered">
+
+        <section class="cards">
+            
+            <article class="card">
+            
+                    <div class="card-content">
+
+                        <h2>Common Leaf Diseases :</h2>
+                        <ul>
+                            <li> <p><i>Ascochyta Blight</i> forms lesions on cotyledons, leaves, stems, and bolls. 
+                                Lesions on the cotyledons and leaves approach 2 mm. </p>
+                             </li>
+                            <li><p><i>Bacterial Blight </i> start as tiny water-soaked spots, and progress into 
+                                characteristically angular shapes due to leaf veins limiting bacterial movement.</p>
+                          </li>
+                            <li><p><i>Target Spot</i> include brown lesions, sometimes approaching 2 cm (~1 inch) in diameter, 
+                                exhibiting a series of concentric rings.</p> 
+                            </li>
+                            <li><p><i>Reddish lesions</i> will occur during the early stages. 
+                                As the disease progresses, the lesions enlarge and turn white to light brown in the center.
+                                </p>
+                             </li>
+
+                             <li><p><i>Alternaria Leaf</i> Spot forms lesions on senescing leaves that are brown with purple margins.
+                                As lesions expand they typically exhibit concentric zonation and the necrotic tissue will overlap with other lesions.</p>
+                                </li>
+                          </ul> 
+                          
+                                
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+
+            <article class="card">
+                
+                    <picture class="thumbnail">
+                        <img src='/static/images/d_95_iaip_-_Copy.jpg' alt="Fresh Leaf">
+                    </picture>
+                    <div class="card-content">
+                        <h2>Uninfected Cotton Leaf :</h2>
+
+                        <ul>
+                            <li><p> A cotton leaf with no signs of infection is pretty easy to find out.
+                            </p>
+                            </li>
+                          
+                          </ul> 
+                          
+                        </div><!-- .card-content -->
+              
+            </article><!-- .card -->
+
+            <article class="card">
+                
+                    <picture class="thumbnail">
+                        <img src='/static/images/dis_leaf_206_iaip.jpg' alt="Infected Leaf">
+                    </picture>
+                    <div class="card-content">
+                        <h2>Infected Cotton Leaf:</h2>
+
+                        <ul>
+                            <li><p>A cotton leaf shows above signs of decaying when the infection starts to 
+                                grow.</p></li>
+                         
+                          </ul> 
+                          
+                        
+                    </div><!-- .card-content -->
+               
+            </article><!-- .card -->
+
+            <article class="card">
+                
+                  
+                    <div class="card-content">
+                        <h2>Data-set and Approaches:</h2>
+
+                        <ul>
+                            <li><p>Data-set is obtained from Kaggle repository and it contains images of infected and fresh cotton leaves.</p>
+                            </li>
+                            <li>  <p>For the classification of Infected/Fresh cotton leaves, a convolutional Neural Network model is used, which will take
+                                raw images then converts them into normalized tensors as input to the Neural Network and at the end 
+                                gives us a prediction class as an output. Several callback functions are also used for finding optimal 
+                                learning curve of the model as well as for saving the processing time.
+                            </p>
+                          </li>
+                            <li>  <p>At the moment, the model only predicts if the leaf is infected or not but in the future, it will be 
+                                extended to be able to predict the infection / disease category.
+                            </p>
+                        </li>
+                          </ul> 
+                          
+                      </div><!-- .card-content -->
+                
+            </article><!-- .card -->
+
+        </section><!-- .cards -->
+       
+    </div><!-- .centered -->
+    
+</main>
+
+
+
+{% endblock%}
+   
+
+  
