@@ -1,7 +1,7 @@
 [![license](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](https://github.com/palash-s/cotton-leaf-classifier/blob/main/LICENSE)
 # cotton-leaf-classifier
 
-
+### Alternate notebook can be found on my Kaggle profile : [Palash S](https://www.kaggle.com/raaavan/fine-tuning-the-cotton-leaf-disease-classifier)
 ## Data-set and Approach :
 - Data-set is obtained from the Kaggle repository and it contains images of infected and fresh cotton leaves.
 
